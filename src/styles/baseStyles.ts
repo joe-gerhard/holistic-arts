@@ -5,8 +5,7 @@ export const ContentWrapper = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   width: 95%;
-  max-width: 1002px;
-  justify-content: center;
+  max-width: 1000px;
 `;
 
 export const Section = styled.section`
