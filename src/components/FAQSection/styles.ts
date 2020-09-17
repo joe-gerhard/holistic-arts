@@ -1,7 +1,23 @@
-import styled from "styled-components";
-import { Section } from "../../styles/baseStyles";
+import styled, { css } from "styled-components";
+import { Section, ContentWrapper } from "../../styles/baseStyles";
+import { PropsWithTheme } from "../../styles/theme";
 
-export const StyledFAQSection = styled(Section)`
-  background: #497cac;
-  height: 200px;
+const FAQSection = styled(Section)(
+  ({ theme }: PropsWithTheme) => css`
+    background: ${theme.highlight};
+  `
+);
+
+const Content = styled(ContentWrapper)`
+  justify-content: space-between;
+
+  @media (max-width: 810px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
+
+export default {
+  FAQSection,
+  Content,
+};
