@@ -11,9 +11,9 @@ function App() {
     <StyledApp>
       <Navbar />
       <Switch>
-        <Route exact path="/" component={LandingPage} />
         <Route exact path="/about" component={AboutPage} />
         <Route exact path="/consultation" component={ConsultationPage} />
+        <Route path="/" component={LandingPage} />
       </Switch>
     </StyledApp>
   );

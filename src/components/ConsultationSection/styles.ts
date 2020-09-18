@@ -43,7 +43,6 @@ const Card = styled.div(
     display: flex;
     flex-direction: column;
     padding: 60px;
-    margin-top: 125px;
     font-family: "Open Sans";
     margin-bottom: 100px;
     width: 100%;
