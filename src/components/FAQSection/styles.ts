@@ -4,7 +4,7 @@ import { PropsWithTheme } from "../../styles/theme";
 
 const FAQSection = styled(Section)(
   ({ theme }: PropsWithTheme) => css`
-    background: ${theme.highlight};
+    background: ${theme.ternary};
   `
 );
 

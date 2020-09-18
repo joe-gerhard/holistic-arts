@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { Section } from "../../styles/baseStyles";
 import { PropsWithTheme } from "../../styles/theme";
+import flowerOfLife from "../../images/FlowerOfLife.png";
 
 const SplashSection = styled(Section)(
   ({ theme }: PropsWithTheme) => css`
@@ -75,7 +76,7 @@ const BackgroundImage = styled.div`
 
   &::after {
     content: "";
-    background: url("FlowerOfLife.png");
+    background: url(${flowerOfLife});
     background-size: 150vh;
     background-repeat: no-repeat;
     background-position: top 100% right 100%;

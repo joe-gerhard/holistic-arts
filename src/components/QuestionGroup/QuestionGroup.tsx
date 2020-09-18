@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Styled from "./styles";
+import arrow from "../../images/Arrow.png";
 
 interface QuestionGroupProps {
   question: string;
@@ -18,7 +19,7 @@ const QuestionGroup: React.FC<QuestionGroupProps> = ({ question, answer }) => {
       <Styled.QuestionRow>
         <Styled.Arrow
           isOpen={isOpen}
-          src="/Arrow.png"
+          src={arrow}
           alt="Dropdown Arrow"
           onClick={handleToggleOpenQuestion}
         />

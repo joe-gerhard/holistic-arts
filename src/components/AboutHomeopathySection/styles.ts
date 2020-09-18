@@ -14,7 +14,7 @@ const Content = styled(ContentWrapper)`
   width: 90%;
 `;
 
-const Header = styled.h1(
+const Header = styled.h2(
   ({ theme }: PropsWithTheme) => css`
     font-family: "Libre Caslon Text";
     color: ${theme.highlight};

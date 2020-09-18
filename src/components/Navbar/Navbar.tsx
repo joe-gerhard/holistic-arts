@@ -1,17 +1,19 @@
 import React from "react";
 import Styled from "./styles";
 import { useHistory } from "react-router-dom";
+import holisticArtsLogo from "../../images/HolisticArtsLogo.png";
+import menuIcon from "../../images/MenuIcon.png";
 
 const Navbar = () => {
   const history = useHistory();
   return (
     <Styled.Navbar>
       <Styled.LogoImage
-        src="/HolisticArtsLogo.png"
+        src={holisticArtsLogo}
         alt="Holistic Arts, LLC"
         onClick={() => history.push("/")}
       />
-      <Styled.HamburgerMenu src="/MenuIcon.png" alt="menu icon" />
+      <Styled.HamburgerMenu src={menuIcon} alt="menu icon" />
       <Styled.NavbarLinkContainer>
         <Styled.NavbarLink to="/about">ABOUT US</Styled.NavbarLink>
         <Styled.CallToActionLink to="/consultation">

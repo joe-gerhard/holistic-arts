@@ -1,13 +1,14 @@
 import React from "react";
 import Styled from "./styles";
 import { ContentWrapper } from "../../styles/baseStyles";
+import family from "../../images/Family.png";
 
 const SplashSection = () => {
   return (
     <Styled.SplashSection>
       <Styled.BackgroundImage />
       <ContentWrapper>
-        <Styled.Image src="/Family.png" alt="Family" />
+        <Styled.Image src={family} alt="Family" />
         <Styled.QuoteWrapper>
           <Styled.QuoteGroup>
             <Styled.Quote>

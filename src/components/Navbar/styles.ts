@@ -2,19 +2,21 @@ import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 import { PropsWithTheme } from "../../styles/theme";
 
-const Navbar = styled.nav`
-  width: 100%;
-  height: 70px;
-  position: sticky;
-  top: 0px;
-  background: white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 20px;
-  z-index: 100;
-`;
+const Navbar = styled.nav(
+  ({ theme }: PropsWithTheme) => css`
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top: 0px;
+    background: ${theme.light};
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    z-index: 100;
+  `
+);
 
 const LogoImage = styled.img`
   width: 70%;
