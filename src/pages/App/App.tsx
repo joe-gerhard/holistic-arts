@@ -3,6 +3,7 @@ import { StyledApp } from "./styles";
 import Navbar from "../../components/Navbar";
 import { Switch, Route } from "react-router-dom";
 import LandingPage from "../LandingPage";
+import AboutPage from "../AboutPage";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={LandingPage} />
+        <Route exact path="/about" component={AboutPage} />
       </Switch>
     </StyledApp>
   );
