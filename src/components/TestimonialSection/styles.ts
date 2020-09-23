@@ -56,7 +56,7 @@ const Headline = styled.h2(
   ({ theme }: PropsWithTheme) => css`
     font-family: "Open Sans";
     color: ${theme.highlight};
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 30px;
     text-align: center;

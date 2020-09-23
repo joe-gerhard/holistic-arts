@@ -9,16 +9,7 @@ const ConsultationSection = () => {
       <ContentWrapper>
         <Styled.Card>
           <Styled.Headline>Set Up Your Consultation</Styled.Headline>
-          <Styled.Text>
-            To set up your initial consultation, please contact Barbara via
-            email here:
-          </Styled.Text>
-          <Styled.EmailLink
-            target="_blank"
-            href="mailto:Barbara@holisticartsnj.com"
-          >
-            EMAIL ME
-          </Styled.EmailLink>
+
           <Styled.Header>Initial Consultation</Styled.Header>
           <Styled.Text>
             Your consultation will normally take from 2 to 3 hours. No
@@ -34,6 +25,16 @@ const ConsultationSection = () => {
             beginning. The goal is to get you healthy so you only call the
             homeopath as needed.
           </Styled.Text>
+          <Styled.Header>
+            To set up your initial consultation, please contact Barbara via
+            email here:
+          </Styled.Header>
+          <Styled.EmailLink
+            target="_blank"
+            href="mailto:Barbara@holisticartsnj.com"
+          >
+            EMAIL ME
+          </Styled.EmailLink>
         </Styled.Card>
       </ContentWrapper>
     </Styled.ConsultationSection>

@@ -60,7 +60,6 @@ const ProfilePicture = styled.img(
     background: ${theme.lightGray};
     position: absolute;
     top: -125px;
-    border: 1px solid ${theme.gray};
   `
 );
 

@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { Section } from "../../styles/baseStyles";
+import { Section, ContentWrapper } from "../../styles/baseStyles";
 import { PropsWithTheme } from "../../styles/theme";
 import flowerOfLife from "../../images/FlowerOfLife.png";
 
@@ -8,18 +8,33 @@ const SplashSection = styled(Section)(
     min-height: calc(100vh - 70px);
     background-color: ${theme.secondary};
     display: flex;
+    padding: 0;
   `
 );
+
+const Content = styled(ContentWrapper)`
+  width: 100%;
+  max-width: 100vw;
+
+  @media (max-width: 812px) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+`;
 
 const Image = styled.img(
   ({ theme }: PropsWithTheme) => css`
     position: relative;
     object-fit: cover;
-    height: calc(100vh - 110px);
+    height: 100vh;
     width: 100%;
-    max-height: 754px;
-    max-width: 500px;
+    max-height: calc(100vh - 70px);
+    max-width: 50vw;
     z-index: 1;
+
+    @media (max-width: 812px) {
+      max-width: 100vw;
+    }
   `
 );
 
@@ -30,9 +45,20 @@ const QuoteWrapper = styled.div(
     justify-content: center;
     height: 100%;
     width: 100%;
-    max-height: 754px;
-    max-width: 500px;
+    max-width: 50vw;
     z-index: 1;
+
+    @media (max-width: 812px) {
+      padding: 20px;
+      padding-bottom: 0;
+      position: absolute;
+      margin: 0 auto;
+      max-width: 100vw;
+      bottom: 0;
+      background: ${theme.secondary + 55};
+      align-items: center;
+      height: auto;
+    }
   `
 );
 
@@ -42,6 +68,11 @@ const QuoteGroup = styled.div(
     margin-bottom: 30px;
     color: ${theme.primary};
     width: 90%;
+    max-width: 500px;
+
+    @media (max-width: 812px) {
+      margin-top: 0;
+    }
   `
 );
 
@@ -51,7 +82,7 @@ const Quote = styled.div`
   font-size: 31px;
 
   @media (max-width: 523px) {
-    font-size: 24px;
+    font-size: 20px;
   }
 `;
 
@@ -91,6 +122,7 @@ const BackgroundImage = styled.div`
 
 export default {
   SplashSection,
+  Content,
   Image,
   QuoteWrapper,
   QuoteGroup,

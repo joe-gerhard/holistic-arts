@@ -12,14 +12,14 @@ const QuestionGroup = styled.div(
 
     @media (max-width: 810px) {
       width: 100%;
+      margin-bottom: 15px;
     }
   `
 );
 
 const QuestionRow = styled.div`
   display: flex;
-  align-items: center;
-  margin-bottom: 5px;
+  align-items: flex-start;
 `;
 
 const Question = styled.h3`
@@ -32,7 +32,7 @@ interface AnswerProps {
 
 const Answer = styled.p(
   ({ isOpen }: AnswerProps) => css`
-    margin: 5px 0 7px 0;
+    margin: 2px 0 7px 0;
     font-size: 14px;
 
     @media (max-width: 810px) {
@@ -53,7 +53,8 @@ const Arrow = styled.img(
     height: 11px;
     width: 17px;
     margin-right: 10px;
-    transform: rotate(${isOpen ? "180deg" : "0deg"});
+    transform: rotate(${isOpen ? "0deg" : "180deg"});
+    margin-top: 7px;
 
     @media (max-width: 810px) {
       display: block;

@@ -1,13 +1,12 @@
 import React from "react";
 import Styled from "./styles";
-import { ContentWrapper } from "../../styles/baseStyles";
 import family from "../../images/Family.png";
 
 const SplashSection = () => {
   return (
     <Styled.SplashSection>
       <Styled.BackgroundImage />
-      <ContentWrapper>
+      <Styled.Content>
         <Styled.Image src={family} alt="Family" />
         <Styled.QuoteWrapper>
           <Styled.QuoteGroup>
@@ -21,7 +20,7 @@ const SplashSection = () => {
             </Styled.QuoteAuthor>
           </Styled.QuoteGroup>
         </Styled.QuoteWrapper>
-      </ContentWrapper>
+      </Styled.Content>
     </Styled.SplashSection>
   );
 };

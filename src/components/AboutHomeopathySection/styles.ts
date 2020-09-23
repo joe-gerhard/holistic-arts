@@ -37,7 +37,7 @@ const Paragraph = styled.p(
   ({ theme }: PropsWithTheme) => css`
     margin-top: 20px;
     font-family: "Open Sans";
-    color: ${theme.dark};
+    color: ${theme.gray};
     font-size: 18px;
   `
 );
@@ -52,18 +52,23 @@ const LearnMoreButton = styled(Link)(
     height: 53px;
 
     background: ${theme.light};
-    border: 2px solid ${theme.dark};
+    border: 2px solid ${theme.gray};
+    border-radius: 6px;
 
     margin: 30px 0;
 
-    color: ${theme.dark};
+    color: ${theme.gray};
     font-family: "Open Sans";
     font-weight: bold;
     font-size: 14px;
     text-decoration: none;
 
+    transition: all 0.5s;
+
     &:hover {
       cursor: pointer;
+      border-color: ${theme.dark};
+      color: ${theme.dark};
     }
   `
 );

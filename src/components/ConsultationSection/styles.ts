@@ -81,12 +81,14 @@ const Text = styled.p(
     max-width: 500px;
     color: ${theme.dark};
     font-size: 14px;
+    margin-bottom: 10px;
   `
 );
 
 const EmailLink = styled.a(
   ({ theme }: PropsWithTheme) => css`
-    margin-top: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
     color: ${theme.light};
     background: ${theme.highlight};
     height: 40px;
