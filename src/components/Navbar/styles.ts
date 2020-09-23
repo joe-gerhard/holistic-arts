@@ -20,7 +20,7 @@ const Navbar = styled.nav(
 
 const LogoImage = styled.img`
   width: 70%;
-  max-width: 420px;
+  max-width: 300px;
   object-fit: scale-down;
 
   &:hover {
@@ -45,6 +45,52 @@ const HamburgerMenu = styled.img`
   }
 `;
 
+interface MenuProps extends PropsWithTheme {
+  isOpen: boolean;
+}
+
+const Menu = styled.div(
+  ({ theme, isOpen }: MenuProps) => css`
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    padding: 20px 0;
+    top: 70px;
+    right: 0px;
+    width: 100vw;
+    max-width: 300px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-top: 1px solid ${theme.lightGray};
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    background: ${theme.light};
+
+    @media (max-width: 810px) {
+      display: ${isOpen ? "flex" : "none"};
+    }
+  `
+);
+
+interface ScreenOverlayProps {
+  isOpen: boolean;
+}
+const ScreenOverlay = styled.div(
+  ({ isOpen }: ScreenOverlayProps) => css`
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+
+    @media (max-width: 810px) {
+      display: ${isOpen ? "block" : "none"};
+    }
+  `
+);
+
 const NavbarLink = styled(Link)(
   ({ theme }: PropsWithTheme) => css`
     font-family: "Open Sans", Impact;
@@ -52,6 +98,10 @@ const NavbarLink = styled(Link)(
     font-size: 14px;
     text-decoration: none;
     color: ${theme.gray};
+
+    @media (max-width: 810px) {
+      margin: 20px 0;
+    }
   `
 );
 
@@ -66,6 +116,9 @@ const CallToActionLink = styled(NavbarLink)(
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 810px) {
+      margin-left: 0;
+    }
   `
 );
 
@@ -74,6 +127,8 @@ export default {
   LogoImage,
   NavbarLinkContainer,
   HamburgerMenu,
+  Menu,
+  ScreenOverlay,
   NavbarLink,
   CallToActionLink,
 };

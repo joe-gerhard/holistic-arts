@@ -47,6 +47,7 @@ const Card = styled.div(
     margin-bottom: 100px;
     width: 100%;
     max-width: 650px;
+    border-radius: 10px;
 
     @media (max-width: 500px) {
       padding: 60px 20px;

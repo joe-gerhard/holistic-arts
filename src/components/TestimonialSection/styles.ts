@@ -49,6 +49,7 @@ const Card = styled.div(
     width: 95%;
     max-width: 625px;
     margin-bottom: 100px;
+    border-radius: 10px;
   `
 );
 
