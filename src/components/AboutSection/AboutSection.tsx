@@ -1,7 +1,7 @@
 import React from "react";
 import Styled from "./styles";
 import { ContentWrapper } from "../../styles/baseStyles";
-import profilePicture from "../../images/BarbaraLowry.jpg";
+import profilePicture from "../../images/HeadshotSmall.png";
 
 const AboutSection = () => {
   return (
