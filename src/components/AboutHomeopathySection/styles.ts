@@ -3,9 +3,11 @@ import { Section, ContentWrapper } from "../../styles/baseStyles";
 import { PropsWithTheme } from "../../styles/theme";
 import { Link } from "react-router-dom";
 
-const AboutHomeopathySection = styled(Section)`
-  background: white;
-`;
+const AboutHomeopathySection = styled(Section)(
+  ({ theme }: PropsWithTheme) => css`
+    background: ${theme.light};
+  `
+);
 
 const Content = styled(ContentWrapper)`
   flex-direction: column;

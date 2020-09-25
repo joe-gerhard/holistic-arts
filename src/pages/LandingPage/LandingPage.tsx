@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledLandingPage } from "./styles";
+import Styled from "./styles";
 import Footer from "../../components/Footer";
 import SplashSection from "../../components/SplashSection";
 import AboutHomeopathySection from "../../components/AboutHomeopathySection";
@@ -8,13 +8,13 @@ import TestimonialSection from "../../components/TestimonialSection";
 
 const LandingPage = () => {
   return (
-    <StyledLandingPage>
+    <Styled.LandingPage>
       <SplashSection />
       <AboutHomeopathySection />
       <FAQSection />
       <TestimonialSection />
       <Footer />
-    </StyledLandingPage>
+    </Styled.LandingPage>
   );
 };
 

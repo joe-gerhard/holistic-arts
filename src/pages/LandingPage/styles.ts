@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
-export const StyledLandingPage = styled.main`
+const LandingPage = styled.main`
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
+
+export default {
+  LandingPage,
+};
