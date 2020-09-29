@@ -26,8 +26,7 @@ const ConsultationSection = () => {
             you only call the homeopath as needed.
           </Styled.Text>
           <Styled.Header>
-            To set up your initial consultation, please contact Barbara via
-            email here:
+            To set up your initial consultation, please email me.
           </Styled.Header>
           <Styled.EmailLink
             target="_blank"
