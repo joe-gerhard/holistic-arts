@@ -32,10 +32,12 @@ const Navbar = () => {
         <Styled.CallToActionLink to="/consultation">
           SET UP A CONSULTATION
         </Styled.CallToActionLink>
-        <Styled.NavbarLink to="/about">ABOUT US</Styled.NavbarLink>
+        <Styled.NavbarLink to="/about">ABOUT</Styled.NavbarLink>
+        <Styled.NavbarLink to="/contact">CONTACT</Styled.NavbarLink>
       </Styled.Menu>
       <Styled.NavbarLinkContainer>
-        <Styled.NavbarLink to="/about">ABOUT US</Styled.NavbarLink>
+        <Styled.NavbarLink to="/about">ABOUT</Styled.NavbarLink>
+        <Styled.NavbarLink to="/contact">CONTACT</Styled.NavbarLink>
         <Styled.CallToActionLink to="/consultation">
           SET UP A CONSULTATION
         </Styled.CallToActionLink>

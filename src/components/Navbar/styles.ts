@@ -98,6 +98,7 @@ const NavbarLink = styled(Link)(
     font-size: 14px;
     text-decoration: none;
     color: ${theme.gray};
+    margin: 0 20px;
 
     @media (max-width: 810px) {
       margin: 20px 0;

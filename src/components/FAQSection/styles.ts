@@ -10,10 +10,9 @@ const FAQSection = styled(Section)(
 
 const Content = styled(ContentWrapper)`
   justify-content: space-between;
-
+  flex-direction: column;
+  align-items: center;
   @media (max-width: 810px) {
-    flex-direction: column;
-    align-items: center;
   }
 `;
 

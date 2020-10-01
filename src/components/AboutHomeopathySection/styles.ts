@@ -53,7 +53,7 @@ const LearnMoreButton = styled(Link)(
     width: 234px;
     height: 53px;
 
-    background: ${theme.light};
+    background: transparent;
     border: 2px solid ${theme.gray};
     border-radius: 6px;
 

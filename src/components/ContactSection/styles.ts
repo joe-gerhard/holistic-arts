@@ -3,7 +3,7 @@ import { Section } from "../../styles/baseStyles";
 import { PropsWithTheme } from "../../styles/theme";
 import flowerOfLife from "../../images/FlowerOfLife.png";
 
-const ConsultationSection = styled(Section)(
+const ContactSection = styled(Section)(
   ({ theme }: PropsWithTheme) => css`
     min-height: calc(100vh - 70px);
     background-color: ${theme.secondary};
@@ -45,7 +45,7 @@ const Card = styled.div(
     padding: 60px;
     font-family: "Open Sans";
     margin-bottom: 100px;
-    width: 100%;
+
     max-width: 650px;
     border-radius: 10px;
 
@@ -58,13 +58,11 @@ const Card = styled.div(
 const Headline = styled.h2(
   ({ theme }: PropsWithTheme) => css`
     color: ${theme.highlight};
-    width: 90%;
+    width: 100%;
     font-size: 24px;
     font-weight: bold;
-
-    @media (max-width: 400px) {
-      font-size: 18px;
-    }
+    text-align: center;
+    margin-bottom: 10px;
   `
 );
 
@@ -78,17 +76,44 @@ const Header = styled.h5(
 const Text = styled.p(
   ({ theme }: PropsWithTheme) => css`
     white-space: pre-line;
-    width: 90%;
-    max-width: 500px;
     color: ${theme.dark};
     font-size: 14px;
+    width: 100%;
     margin-bottom: 10px;
+    user-select: text;
+  `
+);
+
+const Row = styled.div`
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  margin-top: 10px;
+`;
+
+const Label = styled.span(
+  ({ theme }: PropsWithTheme) => css`
+    color: ${theme.highlight};
+    min-width: 100px;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 14px;
   `
 );
 
 const EmailLink = styled.a(
   ({ theme }: PropsWithTheme) => css`
-    color: ${theme.highlight};
+    margin: 0 auto;
+    margin-top: 30px;
+    color: ${theme.light};
+    background: ${theme.highlight};
+    height: 40px;
+    width: 234px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
     font-family: "Open Sans";
     font-weight: bold;
     text-decoration: none;
@@ -100,11 +125,13 @@ const EmailLink = styled.a(
 );
 
 export default {
-  ConsultationSection,
+  ContactSection,
   BackgroundImage,
   Card,
   Headline,
   Header,
   Text,
+  Row,
+  Label,
   EmailLink,
 };
