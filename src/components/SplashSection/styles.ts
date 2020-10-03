@@ -28,7 +28,7 @@ const Image = styled.img(
     object-fit: cover;
     height: 100vh;
     width: 100%;
-    max-height: calc(100vh - 70px);
+    /* max-height: calc(100vh - 70px); */
     max-width: 50vw;
     z-index: 1;
 
@@ -42,6 +42,7 @@ const QuoteWrapper = styled.div(
   ({ theme }: PropsWithTheme) => css`
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     height: 100%;
     width: 100%;
@@ -64,12 +65,16 @@ const QuoteWrapper = styled.div(
 
 const QuoteGroup = styled.div(
   ({ theme }: PropsWithTheme) => css`
-    margin-top: 10vh;
-    margin-bottom: 30px;
     color: ${theme.primary};
+    background: ${theme.secondary};
     width: 90%;
-    max-width: 500px;
-
+    max-width: 360px;
+    border: 2px solid ${theme.primary + 15};
+    border-radius: 10px;
+    padding: 30px 40px;
+    align-self: flex-end;
+    margin-right: 60px;
+    margin-bottom: 20px;
     @media (max-width: 812px) {
       margin-top: 0;
     }
@@ -79,7 +84,7 @@ const QuoteGroup = styled.div(
 const Quote = styled.div`
   font-family: "Libre Caslon Text";
   font-style: italic;
-  font-size: 31px;
+  font-size: 18px;
 
   @media (max-width: 523px) {
     font-size: 20px;
@@ -88,9 +93,9 @@ const Quote = styled.div`
 
 const QuoteAuthor = styled.div`
   font-family: "Libre Caslon Text";
-  font-size: 18px;
-  margin-left: 30%;
-  margin-top: 20px;
+  font-size: 12px;
+  margin-left: 46%;
+  margin-top: 5px;
 
   @media (max-width: 523px) {
     font-size: 14px;
@@ -120,6 +125,43 @@ const BackgroundImage = styled.div`
   }
 `;
 
+const AboutHomeopathySection = styled.div(
+  ({ theme }: PropsWithTheme) => css`
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  `
+);
+
+const Headline = styled.h1(
+  ({ theme }: PropsWithTheme) => css`
+    font-family: "Libre Caslon Text";
+    font-size: 36px;
+    font-weight: bold;
+    color: ${theme.highlight};
+    margin: 0 auto;
+  `
+);
+
+const Subheader = styled.h2(
+  ({ theme }: PropsWithTheme) => css`
+    font-family: "Libre Caslon Text";
+    font-size: 18px;
+    font-style: italic;
+    color: ${theme.highlight};
+    letter-spacing: 0.08em;
+    margin: 0 auto;
+  `
+);
+
+const Text = styled.p(
+  ({ theme }: PropsWithTheme) => css`
+    white-space: pre-line;
+    font-family: "Open Sans";
+    padding: 0 30px;
+  `
+);
+
 export default {
   SplashSection,
   Content,
@@ -129,4 +171,8 @@ export default {
   Quote,
   QuoteAuthor,
   BackgroundImage,
+  AboutHomeopathySection,
+  Headline,
+  Subheader,
+  Text,
 };

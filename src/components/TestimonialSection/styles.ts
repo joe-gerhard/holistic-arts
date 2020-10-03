@@ -44,8 +44,8 @@ const Card = styled.div(
     position: relative;
     z-index: 1;
     padding: 20px;
-    background: ${theme.light};
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    background: ${theme.secondary};
+    border: 2px solid ${theme.primary + 15};
     width: 95%;
     max-width: 625px;
     margin-bottom: 100px;
@@ -55,9 +55,9 @@ const Card = styled.div(
 
 const Headline = styled.h2(
   ({ theme }: PropsWithTheme) => css`
-    font-family: "Open Sans";
+    font-family: "Libre Caslon Text";
     color: ${theme.highlight};
-    font-size: 30px;
+    font-size: 36px;
     font-weight: bold;
     margin-bottom: 30px;
     text-align: center;
@@ -71,7 +71,8 @@ const Headline = styled.h2(
 const ReviewGroup = styled.div`
   width: 100%;
   max-width: 500px;
-  min-height: 200px;
+  min-height: 150px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,9 +80,11 @@ const ReviewGroup = styled.div`
 
 const Name = styled.h3(
   ({ theme }: PropsWithTheme) => css`
-    font-family: "Open Sans";
+    font-family: "Libre Caslon Text";
+    font-style: italic;
     font-size: 24px;
-    color: ${theme.gray};
+    color: ${theme.highlight};
+    margin-left: auto;
     margin-bottom: 10px;
   `
 );
@@ -108,6 +111,7 @@ const ReadMoreButton = styled.span(
     font-family: "Open Sans";
     font-size: 14px;
     color: ${theme.highlight};
+    margin-left: 5px;
 
     &:hover {
       cursor: pointer;
@@ -128,9 +132,9 @@ const ArrowButton = styled.button(
     align-items: center;
     width: 48px;
     height: 48px;
-    background-color: ${theme.highlight};
+    background-color: transparent;
     border-radius: 100%;
-    border: none;
+    border: 2px solid ${theme.gray};
     margin: 0 17px;
 
     &:hover {
@@ -147,12 +151,14 @@ const LeftArrow = styled.img`
   height: 11px;
   width: 17px;
   transform: rotate(270deg);
+  filter: brightness(40%);
 `;
 
 const RightArrow = styled.img`
   height: 11px;
   width: 17px;
   transform: rotate(90deg);
+  filter: brightness(40%);
 `;
 
 interface IndicatorProps extends PropsWithTheme {
@@ -164,8 +170,9 @@ const Indicator = styled.div(
     width: 15px;
     height: 15px;
     border-radius: 100%;
+    border: 2px solid ${highlight ? theme.gray : theme.lightGray};
     margin: 0 4px;
-    background: ${highlight ? theme.highlight : theme.lightGray};
+    background: ${highlight ? theme.gray : "transparent"};
   `
 );
 

@@ -33,25 +33,27 @@ const TestimonialSection = () => {
       <Styled.BackgroundImage />
       <ContentWrapper>
         <Styled.Card>
-          <Styled.Headline>What Our Clients are Saying</Styled.Headline>
+          <Styled.Headline>Testimonials</Styled.Headline>
           <Styled.ReviewGroup>
-            <Styled.Name>{reviews[reviewIdx].author}</Styled.Name>
             <Styled.ReviewText>
-              {shouldShowFullReview
-                ? reviews[reviewIdx].full
-                : reviews[reviewIdx].short}
+              {shouldShowFullReview ? (
+                <>"{reviews[reviewIdx].full}"</>
+              ) : (
+                <>
+                  "{reviews[reviewIdx].short}"
+                  <Styled.ReadMoreButton
+                    onClick={() =>
+                      setShouldShowFullReview(
+                        (shouldShowFullReview) => !shouldShowFullReview
+                      )
+                    }
+                  >
+                    ...Read More
+                  </Styled.ReadMoreButton>
+                </>
+              )}
             </Styled.ReviewText>
-            <Styled.Row>
-              <Styled.ReadMoreButton
-                onClick={() =>
-                  setShouldShowFullReview(
-                    (shouldShowFullReview) => !shouldShowFullReview
-                  )
-                }
-              >
-                {shouldShowFullReview ? undefined : "...Read More"}
-              </Styled.ReadMoreButton>
-            </Styled.Row>
+            <Styled.Name>- {reviews[reviewIdx].author}</Styled.Name>
           </Styled.ReviewGroup>
           <Styled.Controls>
             <Styled.ArrowButton onClick={handleClickLeft}>

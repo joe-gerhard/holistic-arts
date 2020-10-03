@@ -8,8 +8,8 @@ const Navbar = styled.nav(
     height: 70px;
     position: sticky;
     top: 0px;
-    background: ${theme.light};
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: ${theme.secondary};
+    border-bottom: 2px solid ${theme.gray};
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,12 +60,12 @@ const Menu = styled.div(
     right: 0px;
     width: 100vw;
     max-width: 300px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-top: 1px solid ${theme.lightGray};
+    border: 2px solid ${theme.gray};
+    border-top: none;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 
-    background: ${theme.light};
+    background: ${theme.secondary};
 
     @media (max-width: 810px) {
       display: ${isOpen ? "flex" : "none"};

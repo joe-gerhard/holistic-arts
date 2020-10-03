@@ -8,6 +8,7 @@ const AboutSection = styled(Section)(
     min-height: calc(100vh - 70px);
     background-color: ${theme.secondary};
     display: flex;
+    align-items: flex-start;
   `
 );
 
@@ -36,14 +37,14 @@ const BackgroundImage = styled.div`
 
 const Card = styled.div(
   ({ theme }: PropsWithTheme) => css`
-    background: ${theme.light};
+    background: ${theme.secondary};
+    border: 2px solid ${theme.primary + 15};
     position: relative;
     z-index: 1;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 145px 0px 60px 0px;
+    padding: 90px 0px 60px 0px;
     margin-top: 125px;
     font-family: "Open Sans";
     margin-bottom: 100px;
@@ -56,11 +57,12 @@ const Card = styled.div(
 const ProfilePicture = styled.img(
   ({ theme }: PropsWithTheme) => css`
     border-radius: 100%;
-    width: 250px;
-    height: 250px;
+    border: 2px solid ${theme.primary + 15};
+    width: 150px;
+    height: 150px;
     background: ${theme.lightGray};
     position: absolute;
-    top: -125px;
+    top: -75px;
   `
 );
 
@@ -82,7 +84,7 @@ const Credentials = styled.h5(
   ({ theme }: PropsWithTheme) => css`
     font-size: 12px;
     color: ${theme.gray};
-    max-width: 350px;
+    max-width: 450px;
     width: 90%;
     font-weight: normal;
     text-align: center;

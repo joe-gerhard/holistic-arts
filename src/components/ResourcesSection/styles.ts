@@ -8,6 +8,7 @@ const ResourcesSection = styled(Section)(
     min-height: calc(100vh - 70px);
     background-color: ${theme.secondary};
     display: flex;
+    align-items: flex-start;
   `
 );
 
@@ -36,10 +37,10 @@ const BackgroundImage = styled.div`
 
 const Card = styled.div(
   ({ theme }: PropsWithTheme) => css`
-    background: ${theme.light};
+    background: ${theme.secondary};
+    border: 2px solid ${theme.primary + 15};
     position: relative;
     z-index: 1;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     padding: 60px;
@@ -59,7 +60,7 @@ const Headline = styled.h2(
   ({ theme }: PropsWithTheme) => css`
     color: ${theme.highlight};
     width: 90%;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
 
     @media (max-width: 400px) {
@@ -70,7 +71,7 @@ const Headline = styled.h2(
 
 const Header = styled.h5(
   ({ theme }: PropsWithTheme) => css`
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 15px;
   `
 );
@@ -78,7 +79,7 @@ const Header = styled.h5(
 const Subheader = styled.h6(
   ({ theme }: PropsWithTheme) => css`
     color: ${theme.gray};
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
   `
 );
@@ -89,7 +90,7 @@ const Text = styled.p(
     width: 90%;
     max-width: 500px;
     color: ${theme.dark};
-    font-size: 14px;
+    font-size: 16px;
   `
 );
 
@@ -97,7 +98,7 @@ const Link = styled.a(
   ({ theme }: PropsWithTheme) => css`
     text-decoration: none;
     color: ${theme.highlight};
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 10px;
   `
 );

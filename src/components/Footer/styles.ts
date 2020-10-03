@@ -1,11 +1,17 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { PropsWithTheme } from "../../styles/theme";
 
-const Footer = styled.footer`
-  background: white;
-  height: 70px;
-  display: flex;
-  align-items: center;
-`;
+const Footer = styled.footer(
+  ({ theme }: PropsWithTheme) => css`
+    width: 100%;
+    background: ${theme.secondary};
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid ${theme.gray};
+  `
+);
 
 const Logo = styled.img`
   width: 45px;

@@ -29,18 +29,20 @@ const Navbar = () => {
         onClick={handleToggleMenuOpen}
       />
       <Styled.Menu isOpen={isMenuOpen} onClick={handleToggleMenuOpen}>
-        <Styled.CallToActionLink to="/consultation">
-          SET UP A CONSULTATION
-        </Styled.CallToActionLink>
         <Styled.NavbarLink to="/about">ABOUT</Styled.NavbarLink>
+        <Styled.NavbarLink to="/">FAQ</Styled.NavbarLink>
+        <Styled.NavbarLink to="/">TESTIMONIALS</Styled.NavbarLink>
+        <Styled.NavbarLink to="/consultation">CONSULT</Styled.NavbarLink>
         <Styled.NavbarLink to="/contact">CONTACT</Styled.NavbarLink>
+        <Styled.NavbarLink to="/resources">RESOURCES</Styled.NavbarLink>
       </Styled.Menu>
       <Styled.NavbarLinkContainer>
         <Styled.NavbarLink to="/about">ABOUT</Styled.NavbarLink>
+        <Styled.NavbarLink to="/">FAQ</Styled.NavbarLink>
+        <Styled.NavbarLink to="/">TESTIMONIALS</Styled.NavbarLink>
+        <Styled.NavbarLink to="/consultation">CONSULT</Styled.NavbarLink>
         <Styled.NavbarLink to="/contact">CONTACT</Styled.NavbarLink>
-        <Styled.CallToActionLink to="/consultation">
-          SET UP A CONSULTATION
-        </Styled.CallToActionLink>
+        <Styled.NavbarLink to="/resources">RESOURCES</Styled.NavbarLink>
       </Styled.NavbarLinkContainer>
     </Styled.Navbar>
   );

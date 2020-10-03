@@ -8,7 +8,7 @@ const QuestionGroup = styled.div(
     width: 100%;
     margin-bottom: 15px;
 
-    color: ${theme.light};
+    color: ${theme.secondary};
     font-family: "Open Sans";
   `
 );

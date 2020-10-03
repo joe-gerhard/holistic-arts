@@ -8,6 +8,7 @@ const ContactSection = styled(Section)(
     min-height: calc(100vh - 70px);
     background-color: ${theme.secondary};
     display: flex;
+    align-items: flex-start;
   `
 );
 
@@ -36,16 +37,15 @@ const BackgroundImage = styled.div`
 
 const Card = styled.div(
   ({ theme }: PropsWithTheme) => css`
-    background: ${theme.light};
+    background: ${theme.secondary};
     position: relative;
     z-index: 1;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border: 2px solid ${theme.primary + 15};
     display: flex;
     flex-direction: column;
     padding: 60px;
     font-family: "Open Sans";
     margin-bottom: 100px;
-
     max-width: 650px;
     border-radius: 10px;
 
@@ -68,7 +68,7 @@ const Headline = styled.h2(
 
 const Header = styled.h5(
   ({ theme }: PropsWithTheme) => css`
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 15px;
   `
 );
@@ -77,7 +77,7 @@ const Text = styled.p(
   ({ theme }: PropsWithTheme) => css`
     white-space: pre-line;
     color: ${theme.dark};
-    font-size: 14px;
+    font-size: 16px;
     width: 100%;
     margin-bottom: 10px;
     user-select: text;
@@ -97,7 +97,7 @@ const Label = styled.span(
     min-width: 100px;
     text-align: right;
     margin-right: 10px;
-    font-size: 14px;
+    font-size: 16px;
   `
 );
 
