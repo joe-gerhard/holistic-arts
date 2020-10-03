@@ -24,9 +24,6 @@ const AboutHomeopathySection = () => {
           approved. Many remedies are available over the counter from health
           food stores or are available from natural care pharmacies worldwide.
         </Styled.Paragraph>
-        <Styled.LearnMoreButton to="/resources">
-          LEARN MORE
-        </Styled.LearnMoreButton>
       </Styled.Content>
     </Styled.AboutHomeopathySection>
   );

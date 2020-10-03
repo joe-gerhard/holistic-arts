@@ -17,9 +17,13 @@ const ConsultationSection = () => {
             be provided prior to your visit.
           </Styled.Text>
           <Styled.Text>
-            {`Initial Visit (+/- 2 hours): $325.00 
+            {`
+            Initial Visit (+/- 2 hours): $325.00 
+
             Follow-up Visits in person or via Zoom (1 hour): $100.00 
+
             Follow-up Visits more than 1 year from the last visit: $200.00 
+
             Follow-up Visits after 2 years will be charged as an initial visit.`}
           </Styled.Text>
           <Styled.Header>Follow-up Meetings</Styled.Header>

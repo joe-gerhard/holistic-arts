@@ -5,7 +5,12 @@ import { Link } from "react-router-dom";
 
 const AboutHomeopathySection = styled(Section)(
   ({ theme }: PropsWithTheme) => css`
-    background: ${theme.light};
+    background: ${theme.secondary};
+    display: none;
+
+    @media (max-width: 810px) {
+      display: flex;
+    }
   `
 );
 
@@ -13,6 +18,7 @@ const Content = styled(ContentWrapper)`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  padding: 20px 0;
   width: 90%;
 `;
 
@@ -39,8 +45,8 @@ const Paragraph = styled.p(
   ({ theme }: PropsWithTheme) => css`
     margin-top: 20px;
     font-family: "Open Sans";
-    color: ${theme.gray};
-    font-size: 18px;
+    color: ${theme.dark};
+    font-size: 16px;
   `
 );
 

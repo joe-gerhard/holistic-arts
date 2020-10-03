@@ -80,7 +80,7 @@ const Header = styled.h5(
 const Text = styled.p(
   ({ theme }: PropsWithTheme) => css`
     white-space: pre-line;
-    width: 90%;
+    width: 100%;
     max-width: 500px;
     color: ${theme.dark};
     font-size: 16px;

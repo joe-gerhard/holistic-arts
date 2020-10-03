@@ -28,7 +28,7 @@ const Image = styled.img(
     object-fit: cover;
     height: 100vh;
     width: 100%;
-    /* max-height: calc(100vh - 70px); */
+    max-height: calc(100vh - 70px);
     max-width: 50vw;
     z-index: 1;
 
@@ -49,7 +49,7 @@ const QuoteWrapper = styled.div(
     max-width: 50vw;
     z-index: 1;
 
-    @media (max-width: 812px) {
+    @media (max-width: 810px) {
       padding: 20px;
       padding-bottom: 0;
       position: absolute;
@@ -77,6 +77,10 @@ const QuoteGroup = styled.div(
     margin-bottom: 20px;
     @media (max-width: 812px) {
       margin-top: 0;
+      background: transparent;
+      border: none;
+      margin: 0;
+      padding: 0;
     }
   `
 );
@@ -129,7 +133,11 @@ const AboutHomeopathySection = styled.div(
   ({ theme }: PropsWithTheme) => css`
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 20px 0;
+
+    @media (max-width: 810px) {
+      display: none;
+    }
   `
 );
 
