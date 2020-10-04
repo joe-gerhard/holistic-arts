@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { Section } from "../../styles/baseStyles";
 import { PropsWithTheme } from "../../styles/theme";
-import flowerOfLife from "../../images/FlowerOfLife.png";
+import flowerOfLife from "../../images/FlowerOfLife.webp";
 
 const TestimonialSection = styled(Section)(
   ({ theme }: PropsWithTheme) => css`
