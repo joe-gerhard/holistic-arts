@@ -93,7 +93,7 @@ const ScreenOverlay = styled.div(
 
 const NavbarLink = styled(Link)(
   ({ theme }: PropsWithTheme) => css`
-    font-family: "Open Sans", Impact;
+    font-family: "Open Sans", sans-serif;
     font-weight: bold;
     font-size: 14px;
     text-decoration: none;

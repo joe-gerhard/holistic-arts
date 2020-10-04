@@ -4,6 +4,7 @@ import OpenSansBold from "../fonts/Open_Sans/OpenSans-Bold.ttf";
 import LibreCaslonTextRegular from "../fonts/Libre_Caslon_Text/LibreCaslonText-Regular.ttf";
 import LibreCaslonTextBold from "../fonts/Libre_Caslon_Text/LibreCaslonText-Bold.ttf";
 import LibreCaslonTextItalic from "../fonts/Libre_Caslon_Text/LibreCaslonText-Italic.ttf";
+import theme from "./theme";
 
 export default createGlobalStyle`
 
@@ -42,5 +43,9 @@ export default createGlobalStyle`
     padding: 0;
     margin: 0;
     user-select: none;
+}
+
+html {
+  background: ${theme.secondary};
 }
 `;
