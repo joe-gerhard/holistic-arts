@@ -77,8 +77,12 @@ const Navbar: React.FC<NavbarProps> = ({ refs }) => {
       />
       <Styled.Menu isOpen={isMenuOpen} onClick={handleToggleMenuOpen}>
         <Styled.NavbarLink to="/about">ABOUT</Styled.NavbarLink>
-        <Styled.NavbarLink to="/">FAQ</Styled.NavbarLink>
-        <Styled.NavbarLink to="/">TESTIMONIALS</Styled.NavbarLink>
+        <Styled.NavbarLink as="span" onClick={handleNavigateToFAQ}>
+          FAQ
+        </Styled.NavbarLink>
+        <Styled.NavbarLink as="span" onClick={handleNavigateToTestimonials}>
+          TESTIMONIALS
+        </Styled.NavbarLink>
         <Styled.NavbarLink to="/consultation">CONSULT</Styled.NavbarLink>
         <Styled.NavbarLink to="/contact">CONTACT</Styled.NavbarLink>
         <Styled.NavbarLink to="/resources">RESOURCES</Styled.NavbarLink>
