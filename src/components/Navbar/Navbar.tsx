@@ -22,7 +22,7 @@ const Navbar: React.FC<NavbarProps> = ({ refs }) => {
 
   const handleNavigateToFAQ = () => {
     const navbarHeight = 70;
-    let offsetTop = 70;
+    let offsetTop = navbarHeight;
 
     if (FAQRef.current) {
       offsetTop = FAQRef.current.offsetTop;
@@ -31,11 +31,13 @@ const Navbar: React.FC<NavbarProps> = ({ refs }) => {
     if (history.location.pathname !== "/") {
       history.push("/");
       setTimeout(() => {
+        if (!FAQRef.current) return;
         window.scrollTo({
           left: 0,
-          top: offsetTop - navbarHeight,
+          top: FAQRef.current.offsetTop - navbarHeight,
+          behavior: "smooth",
         });
-      }, 500);
+      }, 200);
     }
 
     window.scrollTo({
@@ -46,15 +48,28 @@ const Navbar: React.FC<NavbarProps> = ({ refs }) => {
   };
 
   const handleNavigateToTestimonials = () => {
-    if (history.location.pathname !== "/") {
-      history.push("/");
+    const navbarHeight = 70;
+    let offsetTop = navbarHeight;
+
+    if (testimonialRef.current) {
+      offsetTop = testimonialRef.current.offsetTop;
     }
 
-    if (!testimonialRef.current) return;
+    if (history.location.pathname !== "/") {
+      history.push("/");
+      setTimeout(() => {
+        if (!testimonialRef.current) return;
+        window.scrollTo({
+          left: 0,
+          top: testimonialRef.current.offsetTop - navbarHeight,
+          behavior: "smooth",
+        });
+      }, 200);
+    }
 
     window.scrollTo({
       left: 0,
-      top: testimonialRef.current.offsetTop - 70,
+      top: offsetTop - navbarHeight,
       behavior: "smooth",
     });
   };
