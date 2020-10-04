@@ -1,6 +1,6 @@
 import React from "react";
 import Styled from "./styles";
-import family from "../../images/Family2.webp";
+import family from "../../images/Family.jpg";
 
 const SplashSection = () => {
   return (
