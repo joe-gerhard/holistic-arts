@@ -52,6 +52,10 @@ const Card = styled.div(
     @media (max-width: 500px) {
       padding: 60px 20px;
     }
+
+    @media (max-width: 380px) {
+      padding: 40px 5px;
+    }
   `
 );
 
@@ -94,7 +98,7 @@ const Row = styled.div`
 const Label = styled.span(
   ({ theme }: PropsWithTheme) => css`
     color: ${theme.highlight};
-    min-width: 100px;
+    min-width: 70px;
     text-align: right;
     margin-right: 10px;
     font-size: 16px;
