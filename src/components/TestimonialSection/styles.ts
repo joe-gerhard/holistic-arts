@@ -48,7 +48,7 @@ const Card = styled.div(
     border: 2px solid ${theme.primary + 15};
     width: 95%;
     max-width: 625px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     border-radius: 10px;
   `
 );

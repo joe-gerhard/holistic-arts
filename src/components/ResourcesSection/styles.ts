@@ -87,8 +87,7 @@ const Subheader = styled.h6(
 const Text = styled.p(
   ({ theme }: PropsWithTheme) => css`
     white-space: pre-line;
-    width: 90%;
-    max-width: 500px;
+    width: 100%;
     color: ${theme.dark};
     font-size: 16px;
   `

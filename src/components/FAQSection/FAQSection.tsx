@@ -2,9 +2,13 @@ import React from "react";
 import Styled from "./styles";
 import QuestionGroup from "../QuestionGroup";
 
-const FAQSection = () => {
+interface FAQSectionProps {
+  FAQRef: React.Ref<HTMLDivElement>;
+}
+
+const FAQSection: React.FC<FAQSectionProps> = ({ FAQRef }) => {
   return (
-    <Styled.FAQSection>
+    <Styled.FAQSection ref={FAQRef}>
       <Styled.Content>
         <QuestionGroup
           question="Can homeopathy help me with my current condition?"

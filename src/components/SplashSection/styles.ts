@@ -51,14 +51,14 @@ const QuoteWrapper = styled.div(
 
     @media (max-width: 810px) {
       padding: 20px;
-      padding-bottom: 0;
       position: absolute;
       margin: 0 auto;
-      max-width: 100vw;
+      align-self: flex-end;
       bottom: 0;
-      background: ${theme.secondary + 55};
+      background: ${theme.secondary + 35};
       align-items: center;
       height: auto;
+      max-width: 100vw;
     }
   `
 );
@@ -75,12 +75,17 @@ const QuoteGroup = styled.div(
     align-self: flex-end;
     margin-right: 60px;
     margin-bottom: 20px;
-    @media (max-width: 812px) {
+    @media (max-width: 810px) {
       margin-top: 0;
       background: transparent;
       border: none;
       margin: 0;
       padding: 0;
+      max-width: 270px;
+    }
+
+    @media (max-width: 523px) {
+      max-width: 250px;
     }
   `
 );
@@ -91,7 +96,7 @@ const Quote = styled.div`
   font-size: 18px;
 
   @media (max-width: 523px) {
-    font-size: 20px;
+    font-size: 17px;
   }
 `;
 
@@ -102,7 +107,7 @@ const QuoteAuthor = styled.div`
   margin-top: 5px;
 
   @media (max-width: 523px) {
-    font-size: 14px;
+    font-size: 11px;
   }
 `;
 
