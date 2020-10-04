@@ -55,7 +55,7 @@ const Card = styled.div(
 
 const Headline = styled.h2(
   ({ theme }: PropsWithTheme) => css`
-    font-family: "Libre Caslon Text";
+    font-family: "Libre Caslon Text", serif;
     color: ${theme.highlight};
     font-size: 36px;
     font-weight: bold;
@@ -80,7 +80,7 @@ const ReviewGroup = styled.div`
 
 const Name = styled.h3(
   ({ theme }: PropsWithTheme) => css`
-    font-family: "Libre Caslon Text";
+    font-family: "Libre Caslon Text", serif;
     font-style: italic;
     font-size: 24px;
     color: ${theme.highlight};
@@ -91,7 +91,7 @@ const Name = styled.h3(
 
 const ReviewText = styled.p(
   ({ theme }: PropsWithTheme) => css`
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     text-align: justify;
     color: ${theme.gray};
@@ -108,7 +108,7 @@ const Row = styled.div`
 
 const ReadMoreButton = styled.span(
   ({ theme }: PropsWithTheme) => css`
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     color: ${theme.highlight};
     margin-left: 5px;

@@ -91,7 +91,7 @@ const QuoteGroup = styled.div(
 );
 
 const Quote = styled.div`
-  font-family: "Libre Caslon Text";
+  font-family: "Libre Caslon Text", serif;
   font-style: italic;
   font-size: 18px;
 
@@ -101,7 +101,7 @@ const Quote = styled.div`
 `;
 
 const QuoteAuthor = styled.div`
-  font-family: "Libre Caslon Text";
+  font-family: "Libre Caslon Text", serif;
   font-size: 12px;
   margin-left: 46%;
   margin-top: 5px;
@@ -148,7 +148,7 @@ const AboutHomeopathySection = styled.div(
 
 const Headline = styled.h1(
   ({ theme }: PropsWithTheme) => css`
-    font-family: "Libre Caslon Text";
+    font-family: "Libre Caslon Text", serif;
     font-size: 36px;
     font-weight: bold;
     color: ${theme.highlight};
@@ -158,7 +158,7 @@ const Headline = styled.h1(
 
 const Subheader = styled.h2(
   ({ theme }: PropsWithTheme) => css`
-    font-family: "Libre Caslon Text";
+    font-family: "Libre Caslon Text", serif;
     font-size: 18px;
     font-style: italic;
     color: ${theme.highlight};
@@ -170,7 +170,7 @@ const Subheader = styled.h2(
 const Text = styled.p(
   ({ theme }: PropsWithTheme) => css`
     white-space: pre-line;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     padding: 0 30px;
   `
 );

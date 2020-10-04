@@ -9,7 +9,7 @@ const QuestionGroup = styled.div(
     margin-bottom: 15px;
 
     color: ${theme.secondary};
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
   `
 );
 

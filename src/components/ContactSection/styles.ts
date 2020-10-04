@@ -44,7 +44,7 @@ const Card = styled.div(
     display: flex;
     flex-direction: column;
     padding: 60px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     margin-bottom: 100px;
     max-width: 650px;
     border-radius: 10px;
@@ -118,7 +118,7 @@ const EmailLink = styled.a(
     justify-content: center;
     align-items: center;
     border: none;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: bold;
     text-decoration: none;
 

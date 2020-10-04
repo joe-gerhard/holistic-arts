@@ -24,7 +24,7 @@ const Content = styled(ContentWrapper)`
 
 const Header = styled.h2(
   ({ theme }: PropsWithTheme) => css`
-    font-family: "Libre Caslon Text";
+    font-family: "Libre Caslon Text", serif;
     color: ${theme.highlight};
     font-size: 36px;
     font-weight: bold;
@@ -33,7 +33,7 @@ const Header = styled.h2(
 
 const SubHeader = styled.h2(
   ({ theme }: PropsWithTheme) => css`
-    font-family: "Libre Caslon Text";
+    font-family: "Libre Caslon Text", serif;
     color: ${theme.highlight};
     font-size: 18px;
     font-style: italic;
@@ -44,7 +44,7 @@ const SubHeader = styled.h2(
 const Paragraph = styled.p(
   ({ theme }: PropsWithTheme) => css`
     margin-top: 20px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     color: ${theme.dark};
     font-size: 16px;
   `
@@ -66,7 +66,7 @@ const LearnMoreButton = styled(Link)(
     margin: 30px 0;
 
     color: ${theme.gray};
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: bold;
     font-size: 14px;
     text-decoration: none;

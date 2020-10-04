@@ -46,7 +46,7 @@ const Card = styled.div(
     align-items: center;
     padding: 90px 0px 60px 0px;
     margin-top: 125px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     margin-bottom: 100px;
     width: 100%;
     max-width: 650px;

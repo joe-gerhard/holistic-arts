@@ -22,7 +22,7 @@ const Logo = styled.img`
 `;
 
 const CopyrightText = styled.span`
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   margin-left: 20px;
 
