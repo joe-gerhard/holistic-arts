@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { Section } from "../../styles/baseStyles";
+import { ContentWrapper, Section } from "../../styles/baseStyles";
 import { PropsWithTheme } from "../../styles/theme";
 import flowerOfLife from "../../images/FlowerOfLife.webp";
 
@@ -11,6 +11,11 @@ const ContactSection = styled(Section)(
     align-items: flex-start;
   `
 );
+
+const Content = styled(ContentWrapper)`
+  flex-direction: column;
+  align-items: center;
+`;
 
 const BackgroundImage = styled.div`
   position: absolute;
@@ -45,7 +50,7 @@ const Card = styled.div(
     flex-direction: column;
     padding: 60px;
     font-family: "Open Sans", sans-serif;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     max-width: 650px;
     border-radius: 10px;
 
@@ -130,6 +135,7 @@ const EmailLink = styled.a(
 
 export default {
   ContactSection,
+  Content,
   BackgroundImage,
   Card,
   Headline,

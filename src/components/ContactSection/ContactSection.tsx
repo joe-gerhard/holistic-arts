@@ -1,12 +1,12 @@
 import React from "react";
 import Styled from "./styles";
-import { ContentWrapper } from "../../styles/baseStyles";
+import Quote from "../Quote";
 
 const ContactSection = () => {
   return (
     <Styled.ContactSection>
       <Styled.BackgroundImage />
-      <ContentWrapper>
+      <Styled.Content>
         <Styled.Card>
           <Styled.Headline>Contact</Styled.Headline>
           <Styled.Row>
@@ -32,7 +32,11 @@ const ContactSection = () => {
             <Styled.Text>+1 (973) 767-8771</Styled.Text>
           </Styled.Row>
         </Styled.Card>
-      </ContentWrapper>
+        <Quote
+          quote="Homeopathy is the safest and most reliable approach to ailments and has withstood the assaults of established medical practice for over 100 years."
+          author="Yehudi Menuhin"
+        />
+      </Styled.Content>
     </Styled.ContactSection>
   );
 };

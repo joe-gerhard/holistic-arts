@@ -1,6 +1,7 @@
 import React from "react";
 import Styled from "./styles";
 import { ContentWrapper } from "../../styles/baseStyles";
+import Quote from "../Quote";
 
 const ConsultationSection = () => {
   return (
@@ -43,6 +44,11 @@ const ConsultationSection = () => {
             </Styled.EmailLink>
           </Styled.Header>
         </Styled.Card>
+        <Quote
+          quote="Homeopathy cures a greater percentage of cases than any other method
+            of treatment."
+          author="Mahatma Gandhi"
+        />
       </ContentWrapper>
     </Styled.ConsultationSection>
   );
