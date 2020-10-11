@@ -15,7 +15,7 @@ const ConsultationSection = () => {
           <Styled.Text>
             Your first consultation normally takes about 2 hours. No preparation
             is needed except for completion of a health history form that will
-            be provided prior to your visit.
+            be provided prior to your visit, to be returned to me before we meet.
           </Styled.Text>
           <Styled.Text>
             {`
@@ -32,7 +32,7 @@ const ConsultationSection = () => {
             The first follow-up visit usually takes place about 4 weeks after
             the initial consultation. Your individual needs will determine the
             frequency of the follow-up visits thereafter; normally, they are at
-            4 week intervals in the beginning.
+            4 week intervals.
           </Styled.Text>
           <Styled.Header>
             To set up your initial consultation, please{" "}

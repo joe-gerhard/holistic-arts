@@ -12,10 +12,8 @@ const AboutSection = () => {
           <Styled.ProfilePicture src={profilePicture} alt="Barbara" />
           <Styled.Name>Barbara Lowry, DSH, CCH</Styled.Name>
           <Styled.Credentials>
-            {`
-            Certified by The Council for Homeopathic Certification (U.S.A.)
-            Graduate, School of Homeopathy New York, Joanna E. Daly, CCH,
-            director`}
+            {`Certified by The Council for Homeopathic Certification (U.S.A.)
+            Graduate, School of Homeopathy New York, Joanna E. Daly, CCH, director`}
           </Styled.Credentials>
           <Styled.Bio>
             {`

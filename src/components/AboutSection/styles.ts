@@ -88,6 +88,7 @@ const Credentials = styled.h5(
     width: 90%;
     font-weight: normal;
     text-align: center;
+    white-space: pre-line;
   `
 );
 

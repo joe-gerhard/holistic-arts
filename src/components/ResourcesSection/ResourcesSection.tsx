@@ -37,16 +37,6 @@ const ResourcesSection = () => {
           >
             http://nationalcenterforhomeopathy.org
           </Styled.Link>
-          <Styled.Header>Homeopathy for Everyone</Styled.Header>
-          <Styled.Text>
-            Provides free, professional content and services for homeopathic
-            professionals, students and the general public. Information may be
-            searched within the site for just about any topic in the homeopathic
-            realm.
-          </Styled.Text>
-          <Styled.Link href="http://www.hpathy.com" target="_blank">
-            http://www.beyondflatearth.com
-          </Styled.Link>
         </Styled.Card>
       </ContentWrapper>
     </Styled.ResourcesSection>
