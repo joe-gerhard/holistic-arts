@@ -16,7 +16,7 @@ const Content = styled(ContentWrapper)`
   width: 100%;
   max-width: 100vw;
 
-  @media (max-width: 812px) {
+  @media (max-width: 810px) {
     flex-direction: column;
     flex-wrap: nowrap;
   }
@@ -32,7 +32,7 @@ const Image = styled.img(
     max-width: 50vw;
     z-index: 1;
 
-    @media (max-width: 812px) {
+    @media (max-width: 810px) {
       max-width: 100vw;
     }
   `
