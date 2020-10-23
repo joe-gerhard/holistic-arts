@@ -46,7 +46,7 @@ const QuoteWrapper = styled.div(
     justify-content: center;
     height: 100%;
     width: 100%;
-    max-width: 50vw;
+    max-width: 49vw;
     z-index: 1;
 
     @media (max-width: 810px) {
