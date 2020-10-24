@@ -93,7 +93,7 @@ const ReviewText = styled.p(
   ({ theme }: PropsWithTheme) => css`
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
-    text-align: justify;
+    text-align: left;
     color: ${theme.gray};
     margin-bottom: 10px;
     white-space: pre-line;

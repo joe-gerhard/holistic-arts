@@ -43,7 +43,7 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({
           <Styled.ReviewGroup>
             <Styled.ReviewText>
               {shouldShowFullReview ? (
-                <>"{reviews[reviewIdx].full}"</>
+                <>{reviews[reviewIdx].full} --{reviews[reviewIdx].author}</>
               ) : (
                 <>
                   "{reviews[reviewIdx].short}"
@@ -59,7 +59,6 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({
                 </>
               )}
             </Styled.ReviewText>
-            <Styled.Name>- {reviews[reviewIdx].author}</Styled.Name>
           </Styled.ReviewGroup>
           <Styled.Controls>
             <Styled.ArrowButton onClick={handleClickLeft}>
