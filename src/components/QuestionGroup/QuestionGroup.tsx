@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import Styled from "./styles";
-import arrow from "../../images/Arrow.png";
 
 interface QuestionGroupProps {
   question: string;
