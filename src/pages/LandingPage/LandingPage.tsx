@@ -20,7 +20,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ refs }) => {
     <Styled.LandingPage>
       <SplashSection />
       <AboutHomeopathySection />
-      <FAQSection FAQRef={FAQRef} />
+      {/* <FAQSection FAQRef={FAQRef} /> */}
       <TestimonialSection testimonialRef={testimonialRef} />
       <Footer />
     </Styled.LandingPage>

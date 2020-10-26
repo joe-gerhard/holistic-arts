@@ -104,7 +104,7 @@ const Navbar: React.FC<NavbarProps> = ({ refs }) => {
       </Styled.Menu>
       <Styled.NavbarLinkContainer>
         <Styled.NavbarLink to="/about">ABOUT</Styled.NavbarLink>
-        <Styled.NavbarLink as="span" onClick={handleNavigateToFAQ}>
+        <Styled.NavbarLink to="/faq">
           FAQ
         </Styled.NavbarLink>
         <Styled.NavbarLink as="span" onClick={handleNavigateToTestimonials}>

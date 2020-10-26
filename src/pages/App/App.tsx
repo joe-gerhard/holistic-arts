@@ -7,6 +7,7 @@ import AboutPage from "../AboutPage";
 import ConsultationPage from "../ConsultationPage";
 import ResourcesPage from "../ResourcesPage";
 import ContactPage from "../ContactPage";
+import FAQPage from "../FAQPage";
 
 function App() {
   const FAQRef = useRef<HTMLDivElement>(null);
@@ -36,6 +37,7 @@ function App() {
         <Route exact path="/contact" component={ContactPage} />
         <Route exact path="/consultation" component={ConsultationPage} />
         <Route exact path="/resources" component={ResourcesPage} />
+        <Route exact path="/faq" component={FAQPage} />
         <Route path="/" render={() => <LandingPage refs={refs} />} />
       </Switch>
     </Styled.App>

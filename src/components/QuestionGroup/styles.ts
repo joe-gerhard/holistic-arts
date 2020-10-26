@@ -8,7 +8,7 @@ const QuestionGroup = styled.div(
     width: 100%;
     margin-bottom: 15px;
 
-    color: ${theme.secondary};
+    color: ${theme.dark};
     font-family: "Open Sans", sans-serif;
   `
 );
@@ -16,29 +16,19 @@ const QuestionGroup = styled.div(
 const QuestionRow = styled.div`
   display: flex;
   align-items: flex-start;
-
-  &:hover {
-    cursor: pointer;
-  }
 `;
 
 const Question = styled.h3`
-  font-size: 18px;
+  font-size: 16px;
 `;
 
-interface AnswerProps {
-  isOpen: boolean;
-}
 
-const Answer = styled.p(
-  ({ isOpen }: AnswerProps) => css`
-    margin: 2px 0 7px 0;
-    font-size: 14px;
-    display: ${isOpen ? "block" : "none"};
-    margin-bottom: 10px;
-    margin-left: 27px;
-  `
-);
+
+const Answer = styled.p`
+  margin: 2px 0 7px 0;
+  font-size: 16px;
+  margin-bottom: 10px;
+`;
 
 interface ArrowProps {
   isOpen: boolean;
