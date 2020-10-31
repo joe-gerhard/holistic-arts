@@ -15,6 +15,9 @@ const SplashSection = styled(Section)(
 const Content = styled(ContentWrapper)`
   width: 100%;
   max-width: 100vw;
+  flex-direction: row;
+  justify-content: stretch;
+  flex-wrap: nowrap;
 
   @media (max-width: 810px) {
     flex-direction: column;
@@ -44,10 +47,8 @@ const QuoteWrapper = styled.div(
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
-    width: 100%;
-    max-width: 49vw;
     z-index: 1;
+    max-width: 50vw;
 
     @media (max-width: 810px) {
       padding: 20px;
