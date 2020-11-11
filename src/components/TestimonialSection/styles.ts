@@ -15,10 +15,10 @@ const TestimonialSection = styled(Section)(
 
 const BackgroundImage = styled.div`
   position: absolute;
-  width: 50vw;
-  height: 50vh;
-  bottom: 0;
-  left: 0;
+  width: 45%;
+  height: 90%;
+  top: 0;
+  right: 0;
   z-index: 0;
 
   &::after {
@@ -26,7 +26,7 @@ const BackgroundImage = styled.div`
     background: url(${flowerOfLife});
     background-size: 150vh;
     background-repeat: no-repeat;
-    background-position: bottom 100% left 100%;
+    background-position: top 100% right 100%;
     opacity: 0.05;
     top: 0;
     left: 0;

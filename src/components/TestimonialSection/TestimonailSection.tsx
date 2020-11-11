@@ -4,13 +4,7 @@ import { ContentWrapper } from "../../styles/baseStyles";
 import arrow from "../../images/Arrow.png";
 import reviews from "./reviews";
 
-interface TestimonialSectionProps {
-  testimonialRef: React.RefObject<HTMLDivElement>;
-}
-
-const TestimonialSection: React.FC<TestimonialSectionProps> = ({
-  testimonialRef,
-}) => {
+const TestimonialSection: React.FC = () => {
   const [reviewIdx, setReviewIdx] = useState<number>(0);
   const [shouldShowFullReview, setShouldShowFullReview] = useState<boolean>(
     false
@@ -35,7 +29,7 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({
   };
 
   return (
-    <Styled.TestimonialSection ref={testimonialRef}>
+    <Styled.TestimonialSection>
       <Styled.BackgroundImage />
       <ContentWrapper>
         <Styled.Card>
