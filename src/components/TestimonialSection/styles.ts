@@ -6,7 +6,7 @@ import flowerOfLife from "../../images/FlowerOfLife.webp";
 const TestimonialSection = styled(Section)(
   ({ theme }: PropsWithTheme) => css`
     position: relative;
-    min-height: 200px;
+    min-height: calc(100vh - 70px);
     background-color: ${theme.secondary};
     display: flex;
     overflow: hidden;
