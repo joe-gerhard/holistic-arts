@@ -19,7 +19,7 @@ const ResourcesSection = () => {
             Homeopathy and how it works. Read/download the entire first edition
             of the book or purchase the second edition here:
           </Styled.Text>
-          <Styled.Link href="http://www.beyondflatearth.com" target="_blank">
+          <Styled.Link href="http://www.beyondflatearth.com">
             http://www.beyondflatearth.com
           </Styled.Link>
           <Styled.Header>National Center for Homeopathy</Styled.Header>
@@ -33,7 +33,6 @@ const ResourcesSection = () => {
           </Styled.Text>
           <Styled.Link
             href="http://nationalcenterforhomeopathy.org"
-            target="_blank"
           >
             http://nationalcenterforhomeopathy.org
           </Styled.Link>

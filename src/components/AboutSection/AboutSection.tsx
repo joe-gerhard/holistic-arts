@@ -19,7 +19,7 @@ const AboutSection = () => {
             {`
             I discovered the efficacy of homeopathy after the birth of my son in the 1980s when his chronic ear infections were healed rapidly and forever. It was my own case of pneumonia that was healed with the help of a homeopathic practitioner that led me to enroll in school to become a homeopath to help my family and begin my own practice.
             
-            I am grateful to have been taught by some of the most experienced homeopaths in the world:  Joanna Daly, Dr. Dinesh Chauhan, Dr. Rajan Sankaran, and Michael Yakir. 
+            I am grateful to have been taught by some of the most experienced homeopaths in the world:  Joanna Daly, Dr. Dinesh Chauhan, Dr. Rajan Sankaran, and Michal Yakir. 
             
             I formed Holistic Arts, LLC for my fulltime practice in New Jersey in 2008 and currently work with clients of all ages worldwide via Zoom / Skype, and in person – from my new location in Fort Worth, Texas as of January 2021.
             `}
