@@ -19,10 +19,10 @@ const ContactSection = () => {
             500 Throckmorton Street, #3601 
             Fort Worth, TX 76102 `}</Styled.Text>
           </Styled.Row>
-          {/* <Styled.Row>
+          <Styled.Row>
             <Styled.Label>Email:</Styled.Label>
             <Styled.Text>Barbara@holisticartsnj.com</Styled.Text>
-          </Styled.Row> */}
+          </Styled.Row>
           <Styled.Row>
             <Styled.Label>Skype:</Styled.Label>
             <Styled.Text>barbara_lowry</Styled.Text>
